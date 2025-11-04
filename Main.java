@@ -67,14 +67,20 @@ public class Main {
 	}
 	
 	public static boolean isWinner(String chosenWord, ArrayList<String> discoveredCorrectLetters) {
-		boolean possibleWinner = true;
+		/**
+		 * Function to check if the player wins / the game is finished
+		 * @param chosenWord the generated word
+		 * @param discoveredCorrectLetters a list with all discovered letters
+		 * @return if is winner or not
+		 */
+		boolean iswinner = true;
 		
 		for(char c : chosenWord.toCharArray()) {
 			if(!discoveredCorrectLetters.contains(String.valueOf(c))) {
-				possibleWinner = false;
+				iswinner = false;
 			}
 		}
 		
-		return possibleWinner;
+		return iswinner;
 	}
 }
