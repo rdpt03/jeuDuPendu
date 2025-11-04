@@ -15,7 +15,6 @@ public class Main {
 
 		//choose a word
 		chosenWord = words.get( (int) Math.round(Math.random() * (words.size()-1)) );
-		System.out.println("[DEBUG] "+chosenWord);
 		while(playing) {
 			//ask the word
 			System.out.print("Mot mystère : ");
